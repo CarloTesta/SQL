@@ -63,7 +63,7 @@ insert into ESECUZIONE values ("singolo","Led Zeppelin IV",1971);
 insert into ESECUZIONE values ("gruppo","Nevermind",1991);
 insert into ESECUZIONE values ("singolo","The Joshua Tree",1987);
 
-#inserimento valori in autore
+#inserimento valori in "autore"
 insert into AUTORE values("Michael Jackson", "Thriller");
 insert into AUTORE values("Pink Floyd", "The Dark Side Of The Moon");
 insert into AUTORE values("The Beatles", "Abbey Road");
