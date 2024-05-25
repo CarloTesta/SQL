@@ -17,15 +17,14 @@ create table if not exists ESECUZIONE (
     titolo_canzone varchar (150),
     anno year
     );
-   
-# creazione tabella "autore"
+   # creazione tabella "autore"
 create table if not exists AUTORE (
-	nome text (20),
-    titolo_canzone varchar (20)
+	nome text (120),
+    titolo_canzone varchar (120)
     );
 # creazione tabella "cantante"
 create table if not exists CANTANTE (
-    nome_cantante text (20),
+    nome_cantante text (120),
     codice_registrazione text (10) 
     );
 #inserimento valori in "disco"    
@@ -64,15 +63,38 @@ insert into ESECUZIONE values ("singolo","Led Zeppelin IV",1971);
 insert into ESECUZIONE values ("gruppo","Nevermind",1991);
 insert into ESECUZIONE values ("singolo","The Joshua Tree",1987);
 
+#inserimento valori in autore
+insert into AUTORE values("Michael Jackson", "Thriller");
+insert into AUTORE values("Pink Floyd", "The Dark Side Of The Moon");
+insert into AUTORE values("The Beatles", "Abbey Road");
+insert into AUTORE values("Fleetwood Mac", "Rumours");
+insert into AUTORE values("Pink Floyd", "The Wall");
+insert into AUTORE values("AC/DC", "Back in Black");
+insert into AUTORE values("Eagles", "Hotel California"); 
+insert into AUTORE values("Led Zeppelin", "Led Zeppelin IV");
+insert into AUTORE values("Nirvana", "Nevermind"); 
+insert into AUTORE values("U2", "The Joshua Tree"); 
 
+#inserimento valori in "cantante"
+insert into CANTANTE values ("Michael Jackson", "gruppo");
+insert into CANTANTE values ("Pink Floyd", "singolo");
+insert into CANTANTE values ("The Beatles", "singolo");
+insert into CANTANTE values ("Fleetwood Mac", "singolo");
+insert into CANTANTE values ("Pink Floyd", "singolo");
+insert into CANTANTE values ("AC/DC", "gruppo");
+insert into CANTANTE values ("Eagles", "gruppo");
+insert into CANTANTE values ("Led Zeppelin", "singolo");
+insert into CANTANTE values ("Nirvana", "gruppo");
+insert into CANTANTE values ("U2", "singolo");
 
+#controlliamo che le tabelle che abbiamo creato siano complete di tutti i dati e che l'inserimento sia andato a buon fine
+select * from DISCO;
+select * from CONTIENE;
+select * from ESECUZIONE;
+select * from AUTORE;
+select * from CANTANTE
 
-
-
-
-
-
-
+#interrogazioni
 
 
 
